@@ -1,13 +1,28 @@
 block footer
 	.inner
-		.footer__logo.logo
-			a: img(src="img/template/logo.png")
-		.footer__menu
-				ul
-					- list = ["Услуги", "Прайс", "Лицензии","Сотрудничество", "Вопрос-ответ", "Статьи"]
+		.footer__top
+			nav.footer__menu
+				ul.footer__menu--list
+					- list = ["Дома из камня", "Дачные дома", "Коттеджы","Бани", "Строительные материалы", "Винтовые сваи"]
 					each item in list
-						li
-							a(href="#") #{item}
-		.footer__copyright.copyright
-			| &copy; 2006–2016 Авангард.
-
+						li.footer__menu--item
+							a.footer__menu--link(href="#") #{item}
+			button.order рассчитать проект
+		.footer__middle
+			.footer__logo.logo
+				a(href="/"): img(src="img/template/footer_logo.png")
+			nav.footer__mainMenu
+				ul.footer__mainMenu--list
+					- list = ["О компании", "Кредит", "Наши проекты", "Статьи", "Акции",  "Контакты"]
+					each item in list
+						li.footer__mainMenu--item
+							a.footer__mainMenu--link(href="#") #{item}
+			.footer__contacts
+				a.footer__phone(href="tel:+79312351443") +7 (831) 235-14-43
+				.footer__address Нижний Новгород, Окский съезд, д. 4, оф. 205
+				a.footer__email(href="mailto:manager@stroylider-nn.ru") manager@stroylider-nn.ru
+	.footer__bottom
+		.inner
+			.footer__copyright.copyright
+				| &copy; 2006–2016 Строй-Лидер НН. Все права защищены
+			.footer__creator.creator &mdash; Разработка и поддержка сайта 

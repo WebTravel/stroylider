@@ -1,7 +1,8 @@
 block menu
-	nav.menu
-		ul.menu__list
-			- list = ["Услуги", "Прайс", "Лицензии","Сотрудничество", "Вопрос-ответ", "Статьи", "Клиенты", "Вакансии", "Контакты"]
-			each item in list
-				li.menu__item
-					a.menu__link(href="#") #{item}
+  nav.main-menu
+    ul.menu__list
+      - list = ["Бани", "Дачные дома", "Коттеджы","Дома из камня", "Строительные материалы", "Винтовые сваи"]
+      each item in list
+        li.menu__item
+          a.menu__link(href="#") #{item}
+  button.order рассчитать проект

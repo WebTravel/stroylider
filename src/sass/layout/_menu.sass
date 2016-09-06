@@ -1,9 +1,47 @@
-nav.menu
+.menu
   flex: 0 0 auto
+  width: 100%
+  background-color: $greenTwo
+  height: 60px
+  .inner
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 100%
+.main-menu
+  max-width: 845px
+  width: 100%
 .menu__list
+  width: 100%
   display: -webkit-flex
   display: -moz-flex
   display: -ms-flex
   display: -o-flex
   display: flex
-  justify-content: space-around
+  justify-content: space-between
+.order
+  text-transform: uppercase
+  font-size: $fz13
+  font-weight: bold
+  color: $white
+  width: 202px
+  height: 37px
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  align-items: center
+  justify-content: center
+  background-image: linear-gradient(to top, #fea700 0%, #fec500 100%)
+  border-radius: $brs
+.menu__link
+  @include linkUnder
+  color: $white
+  font-family: $font
+  font-size: $fz16
+  font-weight: bold

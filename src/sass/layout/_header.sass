@@ -1,8 +1,58 @@
 header
-  height: 120px
+  height: 94px
   width: 100%
   flex: 0 0 auto
   //Стили после включения верхней фиксированной панели
   &
     @include breakpoint($mobile)
       margin-top: 40px
+  .inner
+    height: 100%
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    justify-content: space-between
+    align-items: center
+.logo > a
+  display: block
+  @extend %opacity
+.header__menu
+  max-width: 515px
+  width: 100%
+.header__menu--list
+  width: 100%
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  justify-content: space-between
+.header__menu--link
+  font-size: $fz12
+  text-transform: uppercase
+  color: $menuLinkColor
+  @include linkUnder
+  @extend %hover
+.phone-block
+  > a
+    display: block
+.phone
+  color: $menuLinkColor
+  font-family: $font
+  font-size: $fz22
+  font-weight: bold
+  line-height: 18px
+  text-decoration: none
+  margin-bottom: 0.4em
+.callback
+  background-repeat: no-repeat
+  background-position: 0 2px
+  padding-left: 15px
+  color: $link
+  font-family: $font
+  font-size:  $fz14
+  font-weight: normal
+  @include linkNone
+

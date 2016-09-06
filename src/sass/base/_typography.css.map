@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";EACI,WAAW,EAAE,sBAAsB;EACnC,GAAG,EAAE,iEAAiE;EACtE,GAAG,EAAE,oGAAmG;EACxG,GAAG,EAAE,iFAAiF;EACtF,GAAG,EAAE,oFAAoF;EACzF,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,MAAM;;EAGnB,WAAW,EAAE,eAAe;EAC5B,GAAG,EAAE,mDAAmD;EACxD,GAAG,EAAE,sFAAqF;EAC1F,GAAG,EAAE,mEAAmE;EACxE,GAAG,EAAE,sEAAsE",
-"sources": ["_typography.sass"],
-"names": [],
-"file": "_typography.css"
-}

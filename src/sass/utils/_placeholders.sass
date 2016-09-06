@@ -1,0 +1,11 @@
+@import breakpoint
+
+%opacity
+  &:hover
+    @include breakpoint($desktop)
+      opacity: 0.8
+
+%hover
+  &:hover
+    @include breakpoint($desktop)
+      color: $link

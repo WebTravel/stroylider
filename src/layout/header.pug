@@ -9,5 +9,12 @@ block header
   .inner
     .header__logo.logo
       a(href="/"): img(src="img/template/logo.png")
-    a.header__phone(href="tel:+74953693003") +7 (495) 369-30-03 
-    button.header__callback Перезвоните мне
+    nav.header__menu
+      ul.header__menu--list
+        - list = ["О компании", "Наши проекты", "Акции", "Кредит", "Статьи", "Контакты"]
+        each item in list
+          li.header__menu--item
+            a.header__menu--link(href="#") #{item}
+    .header__phone.phone-block
+      a.phoneblock__number.phone(href="tel:+79312351443") +7 (831) 235-14-43
+      a.phone-block__callback.callback(href="#") Обратный звонок

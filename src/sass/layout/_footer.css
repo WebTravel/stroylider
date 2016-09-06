@@ -1,0 +1,32 @@
+footer {
+  width: 100%;
+  flex: 0 0 auto;
+  background: url(../img/template/footer_bg.jpg) repeat 0 0; }
+
+.footer__top, .footer__bottom, .footer__middle {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.footer__top {
+  height: 60px; }
+
+.footer__menu {
+  max-width: 830px;
+  width: 100%; }
+
+.footer__menu--list {
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+/*# sourceMappingURL=_footer.css.map */

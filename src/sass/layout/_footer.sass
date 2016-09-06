@@ -1,10 +1,98 @@
 footer
   width: 100%
   flex: 0 0 auto
+  background: url(../img/template/footer_bg.jpg) repeat 0 0
+.footer__top, .footer__bottom .inner, .footer__middle
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  justify-content: space-between
+  align-items: center
+.footer__top
+  height: 60px
+  border-bottom: 1px solid #3f3d3c
+.footer__menu
+  max-width: 830px
+  width: 100%
+.footer__menu--list
+  width: 100%
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  align-items: center
+  justify-content: space-between
+.footer__menu--link
+  color: $white
+  @include linkUnder
+  font-size: $fz15
+  font-weight: bold
+  font-family: $font
+.footer__middle
+  height: 140px
+.footer__mainMenu--list
+  width: 100%
+  max-width: 260px
+  max-height: 73px
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+.footer__mainMenu--item
+  width: 42%
+.footer__mainMenu--link
+  font-size: $fz13
+  color: $white
+  font-weight: normal
+  font-family: $font
+  text-transform: uppercase
+  display: block
+  @include linkUnder
+.footer__bottom
+  background-color: rgba(10,10,10,0.3)
+  height: 46px
   .inner
-    display: -webkit-flex
-    display: -moz-flex
-    display: -ms-flex
-    display: -o-flex
-    display: flex
-    justify-content: space-between
+    height: 46px
+.copyright
+  color: #dedede
+  font-family: $font
+  font-size: $fz13
+.footer__creator
+  background-repeat: no-repeat
+  background-position: 0 0
+  padding-left: 25px
+  line-height: 22px
+.creator
+  font-size: $fz14
+  color: #e8e8e8
+.footer__phone
+  display: block
+  color: $white
+  font-family: $font
+  font-size: $fz24
+  font-weight: normal
+  margin-bottom: 0.5em
+  padding-left: 15px
+  background-repeat: no-repeat
+  background-position: 0 7px
+  text-decoration: none
+.footer__address
+  color: $white
+  font-family: $font
+  font-size: $fz15
+  font-weight: normal
+  margin-bottom: 0.75em
+.footer__email
+  display: block
+  @include linkNone
+  color: $link
+  font-family: $font
+  font-size: $fz16
+
+
