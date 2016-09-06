@@ -1,0 +1,16 @@
+.breadcrumbs
+  margin-bottom: 30px
+.breadcrumbs__list
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  flex-wrap: wrap
+.breadcrumbs__item
+  &:not(:last-child)
+    &:after
+      content: '/'
+      margin: 0 5px
+      display: inline-block
+
